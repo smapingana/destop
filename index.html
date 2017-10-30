@@ -1,0 +1,255 @@
+<!DOCTYPE html >
+<html>
+<title >desktop</title >
+<meta name ="viewport"
+content = "width=device-width, initial-scale=1">
+<link rel="stylesheet" 
+href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body >
+<div class="w3-container">
+<div class="w3-container w3-green">
+<h2>desktop</h2>
+</div>
+<p>Click equipment to report :</p>
+<!-- Buttons to open modals -->
+<p><button onclick ="document.getElementById ('drnkw').style.display='block' "     class="w3-button w3-pale-green w3-round-large w3-hover-green" style="width:180px"><b>Drinking Water</b></button></p>
+<p><button onclick="document.getElementById ('wtrp').style.display='block' "       class="w3-button w3-pale-green w3-round-large w3-hover-green" style="width:180px"><b>Water Pipes</b> </button></p>
+<p><button onclick="document.getElementById('elect').style.display='block' "  class="w3-button w3-pale-green w3-round-large w3-hover-green" style="width:180px"><b>Electrical</b> </button></p>
+<p><button onclick="document.getElementById ('electe').style.display='block' " class = "w3-button w3-pale-green w3-round-large w3-hover-green" style="width:180px"><b>Electrical Equipment</b></button></p>
+<p><button onclick="document.getElementById ('strl').style.display='block' " class="w3-button w3-pale-green w3-round-large w3-hover-green" style="width:180px"><b>Street Lights</b></button></p>
+<p><button onclick="document.getElementById ('drka').style.display='block' "        class="w3-button w3-pale-green w3-round-large w3-hover-green" style="width:180px"><b>Dark Area</b></button></p>
+<p><button onclick="document.getElementById ('trfl').style.display='block' " class="w3-button w3-pale-green w3-round-large w3-hover-green" style="width:180px"><b>Traffic Lights</b></button></p>
+<p><button onclick="document.getElementById('rds').style.display='block' "                   class="w3-button w3-pale-green w3-round-large w3-hover-green" style="width:180px"><b>Roads</b> </button></p>
+<p><button onclick="document.getElementById('pthls').style.display='block' " class="w3-button w3-pale-green w3-round-large w3-hover-green" style="width:180px"><b>Potholes</b> </button></p>
+<p><button onclick="document.getElementById('drv').style.display='block' " class="w3-button w3-pale-green w3-round-large w3-hover-green" style="width:180px"><b>Driving</b></button></p>
+<button onclick="document.getElementById ('pdst').style.display='block' " class="w3-button w3-pale-green w3-round-large w3-hover-green" style="width:180px"><b>Pedestrians </b></button></p>
+<p><button onclick="document.getElementById ('swrg').style.display='block' "      class="w3-button w3-pale-green w3-round-large w3-hover-green" style="width:180px"><b>Swerage</b> </button></p>
+
+<!-- modals -->
+
+<div  id="drnkw" class="w3-modal w3-white w3-card-4 w3-animate-zoom">
+<div class="modal content">
+<header class="w3-container w3-green">
+<span onclick="document.getElementById('drnkw').style.display='none' " class="w3-button w3-xlarge w3-display-right">&times;</span>
+<h2>Drinking Water</h2> </header>
+<form class="w3-container">
+<p>Affected area :</p>
+<input class="w3-check" type="checkbox"><label> No Drinking Water in my residence. </label></br>
+<input class="w3-check" type="checkbox"><label> No Drinking Water in our area. </label></br>
+<p>Address :</p>
+<input class="w3-input w3-animate-input w3-border w3-palegreen" style="width:50%" type="text" placeholder="Type in Address..."></br>
+<p>Other :</p>
+<textarea></textarea></br>
+</form>
+<footer class="w3-container w3-green">
+<h5>Let's desk.</h5>
+</footer>
+</div>
+</div>
+<div  id="wtrp" class="w3-modal w3-white w3-card-4 w3-animate-zoom">
+<div class="modal content">
+<header class="w3-container w3-green">
+<span onclick="document.getElementById('wtrp').style.display='none' " class="w3-button w3-xlarge w3-display-right">&times;</span>
+<h2>Water Pipes</h2> </header>
+<form class="w3-container">
+<p>Affected area :</p>
+<input class="w3-check" type="checkbox"><label> Burst Water Pipe/s.</label>
+</br>
+<p>Address :</p>
+<input class="w3-input w3-animate-input w3-border w3-palegreen" style="width:50%" type="text" placeholder="Type in Address..."></br>
+<p>Other :</p>
+<textarea></textarea></br>
+</form>
+<footer class="w3-container w3-green">
+<h5>Let's desk.</h5>
+</footer>
+</div>
+</div>
+<div  id="elect" class="w3-modal w3-white w3-card-4 w3-animate-zoom">
+<div class="modal content">
+<header class="w3-container w3-green">
+<span onclick="document.getElementById('elect').style.display='none' " class="w3-button w3-xlarge w3-display-right">&times;</span>
+<h2>Electrical</h2> </header>
+<form class="w3-container">
+<p>Affected area :</p>
+<input class="w3-check" type="checkbox"><label> No Electricity in my residence.</label></br>
+<input class="w3-check" type="checkbox"><label> No Electricity in our area.</label></br>
+<p>Address :</p>
+<input class="w3-input w3-animate-input w3-border w3-palegreen" style="width:50%" type="text" placeholder="Type in Address..."></br>
+<p>Other :</p>
+<textarea></textarea></br>
+</form>
+<footer class="w3-container w3-green">
+<h5>Let's desk.</h5>
+</footer>
+</div>
+</div>
+<div  id="electe" class="w3-modal w3-white w3-card-4 w3-animate-zoom">
+<div class="modal content">
+<header class="w3-container w3-green">
+<span onclick="document.getElementById('electe').style.display='none' " class="w3-button w3-xlarge w3-display-right">&times;</span>
+<h2>Electrical Equipment</h2> </header>
+<form class="w3-container">
+<p>Affected area :</p>
+<input class="w3-check" type="checkbox"><label>Damaged Electrical Sub station.</label></br>
+<input class="w3-check" type="checkbox"><label>Exposed Electrical Cables.</label></br>
+<p>Address :</p>
+<input class="w3-input w3-animate-input w3-border w3-palegreen" style="width:50%" type="text" placeholder="Type in Address..."></br>
+<p>Other :</p>
+<textarea></textarea></br>
+</form>
+<footer class="w3-container w3-green">
+<h5>Let's desk.</h5>
+</footer>
+</div>
+</div>
+<div  id="strl" class="w3-modal w3-white w3-card-4 w3-animate-zoom">
+<div class="modal content">
+<header class="w3-container w3-green">
+<span onclick="document.getElementById('strl').style.display='none' " class="w3-button w3-xlarge w3-display-right">&times;</span>
+<h2>Street Lights</h2> </header>
+<form class="w3-container">
+<p>Affected area :</p>
+<input class="w3-check" type="checkbox"><label>Damaged street light/s.</label></br>
+<p>Address :</p>
+<input class="w3-input w3-animate-input w3-border w3-palegreen" style="width:50%" type="text" placeholder="Type in Address..."></br>
+<p>Other :</p>
+<textarea></textarea></br>
+</form>
+<footer class="w3-container w3-green">
+<h5>Let's desk.</h5>
+</footer>
+</div>
+</div>
+<div  id="drka" class="w3-modal w3-white w3-card-4 w3-animate-zoom">
+<div class="modal content">
+<header class="w3-container w3-green">
+<span onclick="document.getElementById('drka').style.display='none' " class="w3-button w3-xlarge w3-display-right">&times;</span>
+<h2>Dark Area</h2> </header>
+<form class="w3-container">
+<p>Affected area :</p>
+<input class="w3-check" type="checkbox"><label>Dark and Unsafe area.</label></br>
+<p>Address :</p>
+<input class="w3-input w3-animate-input w3-border w3-palegreen" style="width:50%" type="text" placeholder="Type in Address..."></br>
+<p>Other :</p>
+<textarea></textarea></br>
+</form>
+<footer class="w3-container w3-green">
+<h5>Let's desk.</h5>
+</footer>
+</div>
+</div>
+<div  id="trfl" class="w3-modal w3-white w3-card-4 w3-animate-zoom">
+<div class="modal content">
+<header class="w3-container w3-green">
+<span onclick="document.getElementById('trfl').style.display='none' " class="w3-button w3-xlarge  w3-display-right">&times;</span>
+<h2>Traffic Lights </h2> </header>
+<form class="w3-container">
+<p>Affected area :</p>
+<input class="w3-check" type="checkbox"><label>Faulty traffic lights.</label></br>
+<p>Address :</p>
+<input class="w3-input w3-animate-input w3-border w3-palegreen" style="width:50%" type="text" placeholder="Type in Address..."></br>
+<p>Other :</p>
+<textarea></textarea></br>
+</form>
+<footer class="w3-container w3-green">
+<h5>Let's desk.</h5>
+</footer>
+</div>
+</div>
+<div  id="rds" class="w3-modal w3-white w3-card-4 w3-animate-zoom">
+<div class="modal content">
+<header class="w3-container w3-green">
+<span onclick="document.getElementById('rds').style.display='none' " class="w3-button w3-xlarge  w3-display-right">&times;</span>
+<h2>Roads</h2> </header>
+<form class="w3-container">
+<p>Affected area :</p>
+<input class="w3-check" type="checkbox"><label>Dangerous and Uneaven road.</label></br></br>
+<p>Address :</p>
+<input class="w3-input w3-animate-input w3-border w3-palegreen" style="width:50%" type="text" placeholder="Type in Address..."></br>
+<p>Other :</p>
+<textarea></textarea></br>
+</form>
+<footer class="w3-container w3-green">
+<h5>Let's desk.</h5>
+</footer>
+</div>
+</div>
+<div  id="pthls" class="w3-modal w3-white w3-card-4 w3-animate-zoom">
+<div class="modal content">
+<header class="w3-container w3-green">
+<span onclick="document.getElementById('pthls').style.display='none' " class="w3-button w3-xlarge w3-display-right">&times;</span>
+<h2>Potholes</h2> </header>
+<form class="w3-container">
+<p>Affected area :</p>
+<input class="w3-check" type="checkbox"><label>Dangerous portholes on the road.</label></br>
+<p>Address :</p>
+<input class="w3-input w3-animate-input w3-border w3-palegreen" style="width:50%" type="text" placeholder="Type in Address..."></br>
+<p>Other :</p>
+<textarea></textarea></br>
+</form>
+<footer class="w3-container w3-green">
+<h5>Let's desk.</h5>
+</footer>
+</div>
+</div>
+<div  id="drv" class="w3-modal w3-white w3-card-4 w3-animate-zoom">
+<div class="modal content">
+<header class="w3-container w3-green">
+<span onclick="document.getElementById('drv').style.display='none' " class="w3-button w3-xlarge  w3-display-right">&times;</span>
+<h2>Driving</h2> </header>
+<form class="w3-container">
+<p>Affected area :</p>
+<input class="w3-check" type="checkbox"><label>Dangerous driving on the road.</label></br>
+<input class="w3-check" type="checkbox"><label>Driving under the influence of liquor.</label></br>
+<p>Address :</p>
+<input class="w3-input w3-animate-input w3-border w3-palegreen" style="width:50%" type="text" placeholder="Type in Address..."></br>
+<p>Other :</p>
+<textarea></textarea></br>
+</form>
+<footer class="w3-container w3-green">
+<h5>Let's desk.</h5>
+</footer>
+</div>
+</div>
+<div  id="pdst" class="w3-modal w3-white w3-card-4 w3-animate-zoom">
+<div class="modal content">
+<header class="w3-container w3-green">
+<span onclick="document.getElementById('pdst').style.display='none' " class="w3-button w3-xlarge w3-display-right">&times;</span>
+<h2>Pedestrians</h2> </header>
+<form class="w3-container">
+<p>Affected area :</p>
+<input class="w3-check" type="checkbox"><label>Pedestrian/s likely to cause road accident.</label></br>
+<p>Address :</p>
+<input class="w3-input w3-animate-input w3-border w3-palegreen" style="width:50%" type="text" placeholder="Type in Address..."></br>
+<p>Other :</p>
+<textarea></textarea></br>
+</form>
+<footer class="w3-container w3-green">
+<h5>Let's desk.</h5>
+</footer>
+</div>
+</div>
+<div  id="swrg" class="w3-modal w3-white w3-card-4 w3-animate-zoom">
+<div class="modal content">
+<header class="w3-container w3-green">
+<span onclick="document.getElementById('swrg').style.display='none' " class="w3-button w3-xlarge w3-display-right">&times;</span>
+<h2>Swerage</h2> </header>
+<form class="w3-container">
+<p>Affected area :</p>
+<input class="w3-check" type="checkbox"><label> Overflowing Swerage in my Household.</label></br>
+<input class="w3-check" type="checkbox"><label> Overflowing Swerage in the street.</label></br>
+<p>Address :</p>
+<input class="w3-input w3-animate-input w3-border w3-palegreen" style="width:50%" type="text" placeholder="Type in Address..."></br>
+<p>Other :</p>
+<textarea></textarea></br>
+</form>
+<footer class="w3-container w3-green">
+<h5>Let's desk.</h5>
+</footer>
+</div>
+</div>
+</div>
+</body>
+</html>
